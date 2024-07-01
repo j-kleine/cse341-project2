@@ -1,26 +1,28 @@
 {
-  "name": "cse341-project2",
+  "name": "cse341-project1",
   "version": "1.0.0",
-  "description": "My cse341 project2",
+  "description": "My cse341 project1",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
-
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/j-kleine/cse341-project2.git"
+    "url": "git+https://github.com/j-kleine/cse341-project1.git"
   },
   "author": "Joschua Kleine",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/j-kleine/cse341-project2/issues"
+    "url": "https://github.com/j-kleine/cse341-project1/issues"
   },
-  "homepage": "https://github.com/j-kleine/cse341-project2#readme",
+  "homepage": "https://github.com/j-kleine/cse341-project1#readme",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "mongodb": "^6.8.0"
+    "mongodb": "^6.7.0",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.1"
   }
 }
