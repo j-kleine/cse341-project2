@@ -39,14 +39,14 @@ DELETE  http://localhost:3000/contacts/6682cc1025538b05ccda2acc HTTP/1.1
 
 // DEPLOYED RENDER
 ### Get all contacts
-GET https://cse341-project1-whrr.onrender.com/contacts
+GET https://cse341-project2-whrr.onrender.com/contacts
 
 ### Get contact by id
-GET https://cse341-project1-whrr.onrender.com/contacts/6670cf052d390d9c530063b2
+GET https://cse341-project2-whrr.onrender.com/contacts/6670cf052d390d9c530063b2
 
 
 ### Create contact
-POST https://cse341-project1-whrr.onrender.com/contacts HTTP/1.1
+POST https://cse341-project2-whrr.onrender.com/contacts HTTP/1.1
 content-type: application/json
 
 {
@@ -58,7 +58,7 @@ content-type: application/json
 }
 
 ### Update contact
-PUT https://cse341-project1-whrr.onrender.com/contacts/6670cf052d390d9c530063b2 HTTP/1.1
+PUT https://cse341-project2-whrr.onrender.com/contacts/6670cf052d390d9c530063b2 HTTP/1.1
 content-type: application/json
 
 {
@@ -70,4 +70,4 @@ content-type: application/json
 }
 
 ### Delete contact
-DELETE  https://cse341-project1-whrr.onrender.com/contacts/6670cf052d390d9c530063b2 HTTP/1.1
+DELETE  https://cse341-project2-whrr.onrender.com/contacts/6670cf052d390d9c530063b2 HTTP/1.1
