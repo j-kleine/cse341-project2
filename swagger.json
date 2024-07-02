@@ -68,7 +68,7 @@
         ],
         "responses": {
           "204": {
-            "description": "No Content"
+            "description": "Contact Created"
           },
           "500": {
             "description": "Internal Server Error"
@@ -93,7 +93,7 @@
         ],
         "responses": {
           "204": {
-            "description": "No Content"
+            "description": "Contact Found"
           },
           "500": {
             "description": "Internal Server Error"
@@ -138,7 +138,7 @@
         ],
         "responses": {
           "204": {
-            "description": "No Content"
+            "description": "Contact Updated"
           },
           "500": {
             "description": "Internal Server Error"
@@ -157,8 +157,11 @@
           }
         ],
         "responses": {
-          "default": {
-            "description": ""
+          "204": {
+            "description": "Contact Deleted"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
