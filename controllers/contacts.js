@@ -3,12 +3,17 @@ const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res) => {
     //#swagger.tags=['Contacts]
-    mongodb.getDatabase().db().collection('contacts').find().toArray((err, contacts) => {
-        if (err) {
-            res.status(400).json({message: err});
-        }
+    // mongodb.getDatabase().db().collection('contacts').find().toArray((err, contacts) => {
+    //     if (err) {
+    //         res.status(400).json({message: err});
+    //     }
+    //     res.setHeader('Content-Type', 'application/json');
+    //     res.status(204).json(contacts);
+    // });
+    const result = await mongodb.getDatabase().db().collection('contacts').find();
+    result.toArray().then((contacts) => {
         res.setHeader('Content-Type', 'application/json');
-        res.status(204).json(contacts);
+        res.status(200).json(contacts);
     });
 };
 
