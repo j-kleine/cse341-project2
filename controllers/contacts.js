@@ -3,12 +3,12 @@ const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res) => {
     //#swagger.tags=['Contacts]
-    mongodb.getDatabase().db().collection('contacts').find().toArray((err, lists) => {
+    mongodb.getDatabase().db().collection('contacts').find().toArray((err, contacts) => {
         if (err) {
             res.status(400).json({message: err});
         }
         res.setHeader('Content-Type', 'application/json');
-        res.status(200).json(contacts);
+        res.status(204).json(contacts);
     });
 };
 
@@ -18,12 +18,12 @@ const getSingle = async (req, res) => {
         res.status(400).json('Must use a valid contact id to find a contact.');
     }
     const contactId = new ObjectId(req.params.id);
-    mongodb.getDatabase().db().collection('contacts').find({ _id: contactId }).toArray((err, lists) => {
+    mongodb.getDatabase().db().collection('contacts').find({ _id: contactId }).toArray((err, contacts) => {
         if (err) {
             res.status(400).json({message: err});
         }
         res.setHeader('Content-Type', 'application/json');
-        res.status(200).json(contacts);
+        res.status(204).json(contacts);
     });
 };
 

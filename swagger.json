@@ -26,11 +26,11 @@
     },
     "/contacts/": {
       "get": {
-        "tags": [],
         "description": "",
         "produces": [
           "application/json"
         ],
+        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -38,7 +38,6 @@
         }
       },
       "post": {
-        "tags": [],
         "description": "",
         "parameters": [
           {
@@ -78,7 +77,6 @@
     },
     "/contacts/{id}": {
       "get": {
-        "tags": [],
         "description": "",
         "produces": [
           "application/json"
@@ -101,7 +99,6 @@
         }
       },
       "put": {
-        "tags": [],
         "description": "",
         "parameters": [
           {
